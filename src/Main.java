@@ -12,6 +12,8 @@ public class Main {
             System.out.println("i = " + i);
             int a=10;
             char b='a';
+            float f=.6f;
+            System.out.println(f);
         }
     }
 }
