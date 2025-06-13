@@ -20,6 +20,9 @@ public class Main {
             System.out.println(c.a);
             System.out.println(((Audi) c).cvar);
             c.carbreak();
+            Generics<Integer,String> generics=new Generics<>(10,"absal");
+            System.out.println(generics.getKey());
+            System.out.println(generics.getValue());
         }
     }
 
@@ -27,6 +30,10 @@ abstract  class Car{
     abstract public void carbreak();
     int a=20;
 
+    @Override
+    public String toString() {
+        return "This is a Car";
+    }
 }
 class  Audi extends Car{
     public void carbreak(){
@@ -36,5 +43,10 @@ class  Audi extends Car{
         System.out.println("Acceleratoe");
     }
     int cvar=200;
-  //  System.out.println(cvar);
+
+//    @Override
+//    public String toString() {
+//        return "This is a Audi";
+//    }
+    //  System.out.println(cvar);
 }
